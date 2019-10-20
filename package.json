@@ -3,13 +3,14 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "test": "mocha -r ./test/setup-mocha.js",
-        "start": "webpack-dev-server",
+		"build": "cd src & tsc & cd ..",
+        "test": "npm run build & mocha -r ./test/setup-mocha.js",
+        "start": "npm run build & webpack-dev-server",
         "postinstall": "node postinstall.js"
     },
     "author": "",
     "engines": {
-      "node": "<=10"
+        "node": "<=10"
     },
     "license": "ISC",
     "devDependencies": {

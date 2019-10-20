@@ -23,7 +23,7 @@ describe('TicTacToe', () => {
             game.nextTurn(1, 1)
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(0, 0)
+			game.nextTurn(0, 0)
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(1, 1)
@@ -572,7 +572,9 @@ describe('TicTacToe', () => {
             let game;
 
             game = new TicTacToe();
-            game.nextTurn(0, 1)
+			console.log(game.getCurrentPlayerSymbol());
+			game.nextTurn(0, 1)
+			console.log(game.getCurrentPlayerSymbol(), game.getFieldValue(0, 1));
             expect(game.getFieldValue(0, 1)).to.equal('x')
             expect(game.getFieldValue(2, 2)).to.equal(null)
 
@@ -1239,7 +1241,8 @@ describe('TicTacToe', () => {
             game.nextTurn(1, 1);
             expect(game.isDraw()).to.equal(false);
 
-            game.nextTurn(0, 1);
+			game.nextTurn(0, 1);
+			game.render();
             expect(game.isDraw()).to.equal(false);
 
             game.nextTurn(1, 2);
