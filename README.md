@@ -1,6 +1,6 @@
 ### Bitwise Tic Tac Toe
 
-I made this just for fun. I saw [this comment](https://github.com/tc39/proposal-optional-chaining/issues/74#issuecomment-500047791) and wanted to see if this qualifies me for "programmer veteran" status.
+I made this just for fun. I saw [this comment](https://github.com/tc39/proposal-optional-chaining/issues/74#issuecomment-500047791) and wanted to see if this qualifies me for "programmer veteran" status. This doesn't actually fulfill all the test cases because I don't support overwriting places on the board.
 
 Original readme:
 
